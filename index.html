@@ -16,8 +16,8 @@
       <div class="container">
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
-                  <div class="row">
+               <div class="cart-item"id ="first-item">
+                  <div class="row ">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
                         <h5>iPhone 11 128GB Black</h5>
@@ -30,12 +30,12 @@
                            <button class="btn btn-default"><i class="fas fa-plus"id = "plus-btn"></i></button>
                         </div>
                         <h5>$<span id='price-iPhone'>1219</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id ="first-delete">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item"id = "second-item"> 
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -49,7 +49,7 @@
 
                         </div>
                         <h5>$<span id = "case-dollar">59</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item"id= "second-delete">
                      </div>
                   </div>
                </div>
@@ -173,6 +173,14 @@
          })
          document.getElementById('checkout').addEventListener('click',function(){
             document.getElementById('main').style.display='none';
+
+         })
+         document.getElementById("first-delete").addEventListener('click',function(){
+            document.getElementById("first-item").style.display="none";
+
+         })
+         document.getElementById("second-delete").addEventListener('click',function(){
+            document.getElementById("second-item").style.display="none";
 
          })
 
